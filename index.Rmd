@@ -1,0 +1,17 @@
+---
+title: "A FAIR markdown book"
+author: "Digital Curation Centre"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+#output: bookdown::gitbook
+bibliography: [Library.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+documentclass: book
+github-repo: laurencehorton/fair-implimentation
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+output:
+  bookdown::gitbook: default
+---
+
+<!-- If you need PDF output, uncomment bookdown::pdf_book above in YAML. You will need a LaTeX installation, e.g., https://yihui.name/tinytex/ -->

@@ -1,0 +1,130 @@
+# A Chapter
+
+## Paragraphs
+This is a paragraph. Add a double space at the end of a line  
+to make a new line.
+
+## Headings
+Six types of headings can be used. In mark up you indicate the level with the number of hashtags. We have used headings 1 and 2 already, so headings' 3 to 6 would be:
+
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
+
+## Emphasis
+You can emphasise words in text:  
+
+With two asterisks I can make this **bold** or I can use two underscores __also bold__.  
+One asterisk makes an *italic*, just as one underscore _does_.  
+We can also use two ~ to ~~strikethrough~~?
+
+## Blockquotes
+We can use the blockquotes for quoting very important people:  
+
+> This is a very important resource!  
+>  
+> > Source: _Me_  
+
+## Images
+
+![Picture of Earth from space](The_Blue_Marble2.jpg)
+
+## Links
+[dcc]: https://dcc.ac.uk
+[idcc]: https://dcc.ac.uk/idcc24
+
+[The Digital Curation Centre](https://dcc.ac.uk)  
+[The Digital Curation Centre has some resources][dcc]  
+There is also a link to the DCC's conference [here][idcc]  
+
+## Code
+You can insert code chunks to run data tasks or mathematical functions
+
+The convention for converting to metric are inches and feet to centimetres (cm), yards to meters (m), and miles to meters. Formulas for converting are:
+
+$$
+in * 2.54
+$$
+Run some R code for a table (you can also install things to tidy this).
+```{r}
+head(iris)
+```
+
+Basic data visualisation
+```{r}
+plot(iris$Sepal.Length, iris$Sepal.Width)
+```
+
+
+## Lists
+We can do an ordered list  
+
+1. Findable  
+2. Accessible  
+3. Interoperable  
+4. Reusable  
+
+Or unordered  
+
+* Accessible
+* Reusable
+* Findable
+* Interoperable
+
+Or we can have nested lists  
+
+1. Findable
+  - (Meta)data are assigned a globally unique and persistent identifier
+  - Data are described with rich metadata (defined by R1 below)
+    - Metadata clearly and explicitly include the identifier of the data they describe
+    - (Meta)data are registered or indexed in a searchable resource
+2. Accessible
+- (Meta)data are retrievable by their identifier using a standardised communications protocol
+- The protocol is open, free, and universally implementable
+- The protocol allows for an authentication and authorisation procedure, where necessary
+- Metadata are accessible, even when the data are no longer available
+
+## Table
+A way to do a quick, static table (You can also use code)  
+
+| Left Align (default) | Center Align | Right Align |
+| :------------------- | :----------: | ----------: |
+| FAIR assessment      | Easy         | Policy      |
+| F-UJI                | Moderate     | Dataset     |
+| CoreTrustSeal        | Hard         | Repository  |
+
+## Task List
+
+- [x] FAIR assessment
+- [ ] F-UJI
+- [ ] CoreTrustSeal
+
+## Footnote
+We can have footnotes:  
+
+For example.[^1]
+
+[^1]: and here's the footnote. 
+
+Or do it this way.[^see]
+
+[^see]: Another footnote.
+
+## Citations
+You can create manual citations of course. But if you have many citations you can link to a bib file. This also allows you to set a citation format in the index file. Say Chicago or APA.
+
+This also creates a reference list for you. So you can cite [@digitalcurationcentreCurationReferenceManual] and  [@jonesHowDevelopData2011, p. 3]
+
+
+## Horizontal Lines
+You can insert line breaks using three consecutive "***" or "---" or "___". For example:
+
+***
+
+
+## HTML
+Sometimes you need to resort to some HTML code, for example:
+
+<p align="center">You can only center text this way.</p>
